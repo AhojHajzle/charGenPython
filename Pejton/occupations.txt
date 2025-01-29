@@ -1,0 +1,10 @@
+Blacksmith
+Alchemist
+Knight
+Mage
+Bard
+Herbalist
+Mercenary
+Scribe
+Tavern Keeper
+Cartographer
