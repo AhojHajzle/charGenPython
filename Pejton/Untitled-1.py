@@ -48,26 +48,7 @@ names = random.choice(list(name))
 surnames = random.choice(list(surname))
 
 cities = random.choice(list(city))
-hook = random.choice(list(hooks))
-
-#defines sets of names and ages
-#name = {'Alice', 'Jack', 'Daniel', 'Sophie'}
-
-#with open('fantaseaNames.txt', 'r') as file:
-#    name = set(file.read().splitlines())
-
-"""with open('fantaseaSurnames.txt', 'r') as file:
-    surname = set(file.read().splitlines())
-
-with open('occupations.txt', 'r') as file:
-    work = set(file.read().splitlines())
-
-with open("cities.txt", 'r') as file:
-    city = set(file.read().splitlines())"""
-
-
-
-    
+hook = random.choice(list(hooks))    
 
 def race_age():
     race_data = {
