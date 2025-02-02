@@ -24,7 +24,6 @@ def race():
         return "Elf"
     
 charRace = race()
-print(charRace)
     
 def get_city_data():
     return f"cities/city{charRace}.txt"
@@ -35,6 +34,7 @@ def get_firstName_data():
 def get_lastName_data():
     return f"names/{charRace}/lastName.txt"
     
+pets = load_data("pets.txt")
 name = load_data(get_firstName_data())
 surname = load_data(get_lastName_data())
 work = load_data("occupations.txt")
@@ -48,7 +48,28 @@ names = random.choice(list(name))
 surnames = random.choice(list(surname))
 
 cities = random.choice(list(city))
-hook = random.choice(list(hooks))    
+
+def pet():
+    if random.randint(1, 100) <= 20:
+        pet = random.choice(list(pets))
+        return f"I have a {pet} as a pet."
+    else:
+        return "I have no pets."
+pet = pet()
+
+def has_hook():
+    print(charRace)
+    race_data = {"Dwarf": 15,
+               "Elf": 15,
+               "Human": 35}
+    if random.randint(1, 100) <= race_data[charRace]:
+        hook = random.choice(list(hooks))
+        return hook
+    else:
+        hook = "living a calm life."
+        return hook
+hook = has_hook()
+
 
 def race_age():
     race_data = {
@@ -70,9 +91,9 @@ def define_senior():
         jobs = random.choice(list(work))
         return jobs, age
 
-final_age = define_senior()
 
 jobs, age = define_senior()
 #prints the bitchass
 print(f"Hi, my name is {names} {surnames}and I am {age} year old {charRace}. I work as a {jobs} in {cities}.")
 print(f"And as for the rest? Well, I was {hook}")
+print(pet)
