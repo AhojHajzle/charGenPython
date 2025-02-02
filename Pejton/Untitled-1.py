@@ -40,14 +40,17 @@ surname = load_data(get_lastName_data())
 work = load_data("occupations.txt")
 city = load_data(get_city_data())
 hooks = load_data("hooks.txt")
+weapons = load_data("weapons.txt")
+traits = load_data("traits.txt")
 
 
 
 #randomly selects one name and one age
 names = random.choice(list(name))
 surnames = random.choice(list(surname))
-
 cities = random.choice(list(city))
+weapon = random.choice(list(weapons))
+trait = random.choice(list(traits)).lower()
 
 def pet():
     if random.randint(1, 100) <= 20:
@@ -95,5 +98,7 @@ def define_senior():
 jobs, age = define_senior()
 #prints the bitchass
 print(f"Hi, my name is {names} {surnames}and I am {age} year old {charRace}. I work as a {jobs} in {cities}.")
+print(f"I am proficient with {weapon}.")
 print(f"And as for the rest? Well, I was {hook}")
 print(pet)
+print(f"Others would describe me as {trait}")
