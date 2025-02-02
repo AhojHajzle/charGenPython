@@ -9,3 +9,6 @@ FEATURES: Vygenerování random characteru tří fantasy ras (trpaslík, člově
 Příště: určit, zda postava bude mít háček nebo ne dle procentuální šance (vyšší pro lidi, nižší pro ostatní rasy)
         přidat další rasy?
         určit zda postava bude mít dar či neduh dle hodu kostky
+DOKONČENO
+
+Přesunul jsem se na jiný projekt z důvodu učení jiných věcí. Pokračování bude, tahle verze je zatím jakási alfa. V budoucni bych chtěl přidat random generaci dungeonů a případně propojit se hrou přes PyGame
